@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -82,6 +83,9 @@ p {
 a {
     text-decoration:none;
     color:#ff546a;
+}
+blockquote{
+    padding:10px;
 }
 /* html 5 specifika element
 The <header> tag specifies a header for a document or section.
