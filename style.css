@@ -87,6 +87,10 @@ a {
 blockquote{
     padding:10px;
 }
+table th, td{
+    padding:5px;
+   	border: 1px solid #e6e6e6;
+}
 /* html 5 specifika element
 The <header> tag specifies a header for a document or section.
 The <header> element should be used as a container for introductory content or set of navigational links.
@@ -222,6 +226,7 @@ nav {
         color: #00ccff;
         background-color: #ffffff;
     }
+    
 /* Footer håller footerText */
 #footer {
     margin:auto;
