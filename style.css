@@ -44,93 +44,180 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Slut reset css*/
-
-header{
-    margin: auto;
-    width:940px;
+/* Slut reset css
+********************************************************************************
+*/
+html{/*
+    background-image:url(pics/bgo.png);
+    background-color:#e6e6e6;*/
+    background-color:#e6e6e6;
 }
 
 body {
-	margin: auto;
-	font: 15px/22px Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
+	font: 12px/22px Helvetica, Arial, sans-serif;
+	margin:auto;
 }
 h1,h2,h3{
     color:#666666;
+    padding-top:10px;
 }
 h1 {
-    padding-top:10px;
 	font-size: 32px;
 	line-height: 44px;
 }
 h2 {
-    padding-top:10px;
 	font-size: 28px;
 	line-height: 44px;
 }
 
 h3 {
-    padding-top:10px;
 	font-size: 18px;
 	line-height: 22px;
 }
-
 p {
     padding-top:10px;
     padding-bottom:10px;
 }
-
-/*Detta är d*/
+a {
+    text-decoration:none;
+    color:#ff546a;
+}
+/* html 5 specifika element
+The <header> tag specifies a header for a document or section.
+The <header> element should be used as a container for introductory content or set of navigational links.
+You can have several <header> elements in one document. 
+Note: A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+*/
+header{
+    width:100%;
+    background-color:#ffffff;
+    float: left;
+}
+/*
+div {
+    border:1px solid;
+}
+/*
+The <nav> tag defines a set of navigation links.
+Not all links of a document must be in a <nav> element. The <nav> element is intended only for major block of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+*/
 nav {
     width:100%;
     background-color:#00ccff;
     float: left;
-}
-nav ul{
-    list-style: none;
-}
-
-nav ul li{
-    float: left;
-}
-
-nav ul li a{
-    display: block;
-    width: 235px;
-    /*text-align: center;*/
-    font-size:25px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #00ccff;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-nav ul li a:active{
-    color: #00ccff;
-    background-color: #ffffff;
-}
-nav ul li a:hover{
-    color: #00ccff;
-    background-color: #ffffff;
+    /*
+    -moz-border-radius-bottomright: 50px;
+    Behöver eventuellt använda detta för att göra det kompatibelt med alla webbläsare
     
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius:15px; */
 }
-/* Denna diven håller navigationslänkarna*/
-#navigation{
-    margin:auto;
-    width:940px;
+    nav ul{
+        margin:auto;
+        width:940px;
+    }
+    
+    nav ul li{
+        float: left;
+    }
+    
+    nav ul li a{
+        display: block;
+        width: 235px;
+        text-align: center;
+        font-size:20px;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #00ccff;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    nav ul li a:hover{
+        color: #ffffff;
+        background-color: #0088ab;
+    }
+    nav ul li a:active{
+        color: #ffffff;
+        background-color: #ff546a;
+    }
+    nav .active{
+        color: #ffffff;
+        background-color: #ff546a;
+    }
+.left{
+    float:left;
 }
-/* Håller allt innehåll på sidan*/
-#mainBody {
+.right{
+    float: right;
+}
+/* Div element 
+********************************************************************************
+*/
+#logo {
     margin: auto;
     width:940px;
+    overflow:hidden;
 }
+/*istället för bildogotypen 
+    #logo h1 {
+        color:#00ccff;
+        float:left;
+        font-size: 58px;
+        font-weight:100;
+        text-align:right;
+        padding-bottom:40px;
+    }
+/* Håller allt innehåll på sidan*/
+#mainPage{
+    margin:auto;
+    width:940px;
+    overflow: hidden; /* utan denna fuckas designen upp med 2 div bredvid varandra */
+    background-color: #ffffff
+}
+#mainContent {
+    float: left;
+    margin-top:20px;
+    margin-bottom:20px;
+    width:640px;
+    padding:10px;
+/*    border-radius: 15px;
+    border:1px solid #e6e6e6; */
+}
+#columnRight {
+    margin-top:20px;
+    width:240px;
+    float:right;
+    padding:10px;
+    /*
+    border-radius: 15px;
+    border:1px solid #e6e6e6; */
+}
+    #columnRight dl{
+        padding-left:10px;
+        border-left:1px solid #e6e6e6;
+    }
+    #columnRight dl dd{
+        color:#666666;
+    }
+    #columnRight dl dt a{
+        display: block;
+        width: 192px;
+        font-size:18px;
+        text-decoration: none;
+        color:#666666;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    
+    #columnRight dl dt a:hover{
+        color: #00ccff;
+        background-color: #ffffff;
+    }
 /* Footer håller footerText */
 #footer {
-    width:100%;
-    background-color: #999999;
-}
-#footerText {
-    width:940px;
     margin:auto;
+    width:920px;
+    padding:10px;
+    background-color: #006985;
 }
