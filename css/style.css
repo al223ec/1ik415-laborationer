@@ -10,7 +10,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+/*fieldset, form, label, legend, Form element*/
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -47,10 +47,8 @@ table {
 /* Slut reset css
 ********************************************************************************
 */
-html{/*
-    background-image:url(pics/bgo.png);
-    background-color:#e6e6e6;*/
-    background-color:#e6e6e6;
+html{
+    background-color:#d8d8d8;
 }
 
 body {
@@ -88,7 +86,7 @@ blockquote{
 }
 table th, td{
     padding:5px;
-   	border: 1px solid #e6e6e6;
+   	border: 1px solid #d8d8d8;
 }
 /* html 5 specifika element
 The <header> tag specifies a header for a document or section.
@@ -102,10 +100,6 @@ header{
     float: left;
 }
 /*
-div {
-    border:1px solid;
-}
-/*
 The <nav> tag defines a set of navigation links.
 Not all links of a document must be in a <nav> element. The <nav> element is intended only for major block of navigation links.
 Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
@@ -114,12 +108,6 @@ nav {
     width:100%;
     background-color:#00ccff;
     float: left;
-    /*
-    -moz-border-radius-bottomright: 50px;
-    Behöver eventuellt använda detta för att göra det kompatibelt med alla webbläsare
-    
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius:15px; */
 }
     nav ul{
         margin:auto;
@@ -153,6 +141,47 @@ nav {
         color: #ffffff;
         background-color: #ff546a;
     }
+/* form formatering */
+form, fieldset, label, legend{
+    margin: 0;
+	padding: 0;
+} 
+    form p{
+        padding:5px;
+    }
+    fieldset, input{
+        border: 1px solid #d8d8d8;
+    }
+    input[type="submit"]{
+        margin-top:10px;
+    }
+/* Footer håller footerText */
+footer {
+    margin:auto;
+    width:920px;
+    padding:10px;
+    color:#ffffff;
+    background-color: #006985;
+}
+
+@media print{
+    nav, footer, header img{
+        display:none;
+    }
+    body{
+        font: 13pt Georgia, "Times New Roman", Times, serif;
+    }
+    /* Skriver ut adressen till externa webbplatser */
+    a[href^="http://"]:after {
+    content: " (" attr(href) ")";
+    }
+    #logo:before{
+        display:block;
+        content:"Anton Ledström - En utskriftsvänlig version av min laborationsportal";
+        border:1px solid #d8d8d8;
+    }
+    
+}
 /* Class element
 ********************************************************************************
 */
@@ -192,17 +221,12 @@ nav {
     margin-bottom:20px;
     width:640px;
     padding:10px;
-/*  border-radius: 15px;
-    border:1px solid #e6e6e6; */
 }
 #columnRight {
     margin-top:20px;
     width:240px;
     float:right;
     padding:10px;
-    /*
-    border-radius: 15px;
-    border:1px solid #e6e6e6; */
 }
     #columnRight dl{
         padding-left:10px;
@@ -220,16 +244,7 @@ nav {
         padding-top:5px;
         padding-bottom:5px;
     }
-    
     #columnRight dl dt a:hover{
         color: #00ccff;
         background-color: #ffffff;
     }
-    
-/* Footer håller footerText */
-#footer {
-    margin:auto;
-    width:920px;
-    padding:10px;
-    background-color: #006985;
-}

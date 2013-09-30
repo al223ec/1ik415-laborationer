@@ -2,15 +2,29 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8" />
-        <title>Kontakt</title>
+        <title>Startsida - </title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
-    <ul>
-        <li><a href="../index.html">Start</a></li>
-        <li><a href="laborationer.html">Laborationer</a></li>
-        <li><a href="presentation.html">Presentation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <header>
+        <div id="logo">
+            <img src="../pics/logo.png">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html" >Start</a></li>
+            <li><a href="laborationer.html">Laborationer</a></li>
+            <li><a href="presentation.html">Presentation</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div id="mainPage">
+    <div id="columnRight">
+            <h2>Resultat</h2>
+            
+    </div>
+    <div id="mainContent">
     <h1>Kontakt</h1>
     
 
@@ -18,7 +32,7 @@
        <fieldset>
           <legend>Fråga</legend>
           <p>
-             <label>Ärendetyp</label>
+             Ärendetyp
              <select id = "dropDownList">
                <option value = "1">Fråga</option>
                <option value = "2">Nätilska</option>
@@ -28,9 +42,9 @@
           </p>
           <p>
              Rubrik: <input type="text" name="rubrik">
-          </p>
-          <p>
-              Fråga: <input type="text" name="fråga">
+            </p>
+            <p>
+              Fråga:  <input type="text" name="fråga">
           </p>
         </fieldset>
         <fieldset>
@@ -44,6 +58,13 @@
        </fieldset>
        <input type="submit" value="Skicka frågan">
     </form>
-    
-  </body>
+        </div>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+        <p>
+            Footter text, kommer nog att placeras i lister. Lite mer text 
+        </p>
+    </footer>
+    </body>
 </html>

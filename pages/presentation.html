@@ -2,18 +2,32 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8" />
-        <!-- "iso-8859-1" -->
-        <title>Presentation Anton </title>
+        <title>Startsida - </title>
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
     <body>
-    <ul>
-        <li><a href="../index.html">Start</a></li>
-        <li><a href="laborationer.html">Laborationer</a></li>
-        <li><a href="presentation.html">Presentation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
+    <header>
+        <div id="logo">
+            <img src="../pics/logo.png" alt="logotyp">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="laborationer.html">Laborationer</a></li>
+            <li><a href="presentation.html" class="active">Presentation</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+     </nav>
+    <div id="mainPage">
+    <div id="columnRight">
+        <h2>En vacker bild på mig</h2>
+            <img src="../pics/anton.jpg" alt="En bild på mig" id="bild">
+    </div>
+        
+    <div id="mainContent">
         <h1>Anton Ledström</h1>
-        <h3>Webbprogrammering 2013</h3>
+        <h2>Webbprogrammering 2013</h2>
         <p>
             Hello, en paragrafhph äöå funkar
         </p>
@@ -68,12 +82,20 @@
             <li><a href="http://www.expressen.se">Expressen</a></li>
         </ul>
         
-        <h2>En vacker bild på mig</h2>
-        <img src="../pics/anton.jpg" alt="En bild på mig" id="bild">
+
+        
         <!-- 
             Göra en commit i git. (git add . följt av git commit -am 'Meddelande')
             Göra en synkning mot GitHub. (git push)
             Testa att validera ditt dokument.
         -->
+    </div>
+    </div>
+    <footer>
+        <h2>Footer</h2>
+        <p>
+            Footter text, kommer nog att placeras i lister. Lite mer text 
+        </p>
+    </footer>
     </body>
 </html>
