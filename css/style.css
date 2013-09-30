@@ -113,11 +113,9 @@ nav {
         margin:auto;
         width:940px;
     }
-    
     nav ul li{
         float: left;
     }
-    
     nav ul li a{
         display: block;
         width: 235px;
@@ -125,22 +123,52 @@ nav {
         font-size:20px;
         text-decoration: none;
         color: #ffffff;
-        background-color: #00ccff;
         padding-top:10px;
         padding-bottom:10px;
     }
-    nav ul li a:hover{
-        color: #ffffff;
-        background-color: #0088ab;
+/* Class elemnt navigation 
+*******************************************************************************/
+    nav .start{
+        width:235px;
+        background: #00ccff url('pics/sprite.png') 50px -38px no-repeat; 
     }
-    nav ul li a:active{
-        color: #ffffff;
-        background-color: #ff546a;
+    nav .start a:hover{
+        background: #0088ab url('pics/sprite.png') 50px 10px no-repeat; 
     }
-    nav .active{
-        color: #ffffff;
-        background-color: #ff546a;
+        nav .start .active{
+        background: #ff546a url('pics/sprite.png') 50px 10px no-repeat;   
+        }
+    nav .laborationer{
+        width:235px;
+        background: #00ccff url('pics/sprite.png') 20px -134px no-repeat; 
     }
+    nav .laborationer a:hover{
+        background: #0088ab url('pics/sprite.png') 20px -86px no-repeat; 
+    }
+        nav .laborationer .active{
+        background: #ff546a url('pics/sprite.png') 20px -86px no-repeat;  
+        }
+    nav .presentation{
+        width:235px;
+        background: #00ccff url('pics/sprite.png') 20px -230px no-repeat; 
+    }
+    nav .presentation a:hover{
+        background: #0088ab url('pics/sprite.png') 20px -182px no-repeat; 
+    }
+        nav .presentation .active{
+        background: #ff546a url('pics/sprite.png') 20px -182px no-repeat; 
+        }
+    nav .kontakt{
+        width:235px;
+        background: #00ccff url('pics/sprite.png') 35px -326px no-repeat; 
+    }
+    nav .kontakt a:hover{
+        background: #0088ab url('pics/sprite.png') 35px -278px no-repeat; 
+    }
+        nav .kontakt .active{
+        background: #ff546a url('pics/sprite.png') 35px -278px no-repeat;  
+        }
+
 /* form formatering */
 form, fieldset, label, legend{
     margin: 0;
