@@ -1,4 +1,25 @@
-/* Reset css*/
+/* 
+
+<meta name="viewport" content="width:device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" media="screen and (min-width:481px)" href="screen.css" />
+<link rel="stylesheet" media="only screen and (max-width:480px)" href="mobile.css" />
+
+Problem med pixelratio på små skärmar i pixel grafik kan lösas med detta
+<img src ="minbild.jpg" srcset="minbild2x.jpg 2x, minbild3x.jpg 3x" />
+
+background-image: image-set(url(minbild.png) 1x,
+            url(minbild2x.png)  2x,
+            url(minbild3x.png)  3x);
+
+
+<link rel="shortcut icon" href="bild.ico" type="image/x-icon" /> för IE
+<link rel="shortcut icon" href="bild.png" type="image/png" />
+
+
+*******************
+    Reset css*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,6 +76,9 @@ body {
 	font: 12px/22px Helvetica, Arial, sans-serif;
 	margin:auto;
 }
+img, video {
+    max-width:100%;
+}
 h1,h2,h3{
     color:#666666;
     padding-top:10px;
@@ -88,6 +112,38 @@ table th, td{
     padding:5px;
    	border: 1px solid #d8d8d8;
 }
+/* form formatering */
+form, fieldset, label, legend{
+    margin: 0;
+	padding: 0;
+} 
+    form p{
+        padding:5px;
+    }
+    fieldset, input{
+        border: 1px solid #d8d8d8;
+    }
+    input[type="submit"]{
+        margin-top:10px;
+    }
+@media print{
+    nav, footer, header img{
+        display:none;
+    }
+    body{
+        font: 13pt Georgia, "Times New Roman", Times, serif;
+    }
+    /* Skriver ut adressen till externa webbplatser */
+    a[href^="http://"]:after {
+        content: " (" attr(href) ")";
+    }
+    #logo:before{
+        display:block;
+        content:"Anton Ledström - En utskriftsvänlig version av min laborationsportal";
+        border:1px solid #d8d8d8;
+    }
+}
+
 /* html 5 specifika element
 The <header> tag specifies a header for a document or section.
 The <header> element should be used as a container for introductory content or set of navigational links.
@@ -103,6 +159,9 @@ header{
 The <nav> tag defines a set of navigation links.
 Not all links of a document must be in a <nav> element. The <nav> element is intended only for major block of navigation links.
 Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+
+----------------end style ------------------------------------>
+
 */
 nav {
     width:100%;
@@ -110,8 +169,9 @@ nav {
     float: left;
 }
     nav ul{
+        max-width:940px;
         margin:auto;
-        width:940px;
+
     }
     nav ul li{
         float: left;
@@ -129,7 +189,6 @@ nav {
 /* Class elemnt navigation 
 *******************************************************************************/
     nav .start{
-        width:235px;
         background: #00ccff url('pics/sprite.png') 50px -38px no-repeat; 
     }
     nav .start a:hover{
@@ -139,7 +198,6 @@ nav {
         background: #ff546a url('pics/sprite.png') 50px 10px no-repeat;   
         }
     nav .laborationer{
-        width:235px;
         background: #00ccff url('pics/sprite.png') 20px -134px no-repeat; 
     }
     nav .laborationer a:hover{
@@ -149,7 +207,6 @@ nav {
         background: #ff546a url('pics/sprite.png') 20px -86px no-repeat;  
         }
     nav .presentation{
-        width:235px;
         background: #00ccff url('pics/sprite.png') 20px -230px no-repeat; 
     }
     nav .presentation a:hover{
@@ -159,7 +216,6 @@ nav {
         background: #ff546a url('pics/sprite.png') 20px -182px no-repeat; 
         }
     nav .kontakt{
-        width:235px;
         background: #00ccff url('pics/sprite.png') 35px -326px no-repeat; 
     }
     nav .kontakt a:hover{
@@ -169,110 +225,17 @@ nav {
         background: #ff546a url('pics/sprite.png') 35px -278px no-repeat;  
         }
 
-/* form formatering */
-form, fieldset, label, legend{
-    margin: 0;
-	padding: 0;
-} 
-    form p{
-        padding:5px;
-    }
-    fieldset, input{
-        border: 1px solid #d8d8d8;
-    }
-    input[type="submit"]{
-        margin-top:10px;
-    }
+
 /* Footer håller footerText */
 footer {
     margin:auto;
-    width:920px;
+    max-width:920px;
     padding:10px;
+    clear:both;
     color:#ffffff;
     background-color: #006985;
 }
-
-@media print{
-    nav, footer, header img{
-        display:none;
-    }
-    body{
-        font: 13pt Georgia, "Times New Roman", Times, serif;
-    }
-    /* Skriver ut adressen till externa webbplatser */
-    a[href^="http://"]:after {
-    content: " (" attr(href) ")";
-    }
-    #logo:before{
-        display:block;
-        content:"Anton Ledström - En utskriftsvänlig version av min laborationsportal";
-        border:1px solid #d8d8d8;
-    }
-    
-}
-/* Class element
-********************************************************************************
-*/
-.left{
-    float:left;
-}
-.right{
-    float: right;
-}
-/* Div element 
-********************************************************************************
-*/
 #logo {
     margin: auto;
-    width:940px;
-    overflow:hidden;
+    max-width:940px;
 }
-/*istället för bildogotypen 
-    #logo h1 {
-        color:#00ccff;
-        float:left;
-        font-size: 58px;
-        font-weight:100;
-        text-align:right;
-        padding-bottom:40px;
-    }
-/* Håller allt innehåll på sidan*/
-#mainPage{
-    margin:auto;
-    width:940px;
-    overflow: hidden; /* utan denna fuckas designen upp med 2 div bredvid varandra */
-    background-color: #ffffff
-}
-#mainContent {
-    float: left;
-    margin-top:20px;
-    margin-bottom:20px;
-    width:640px;
-    padding:10px;
-}
-#columnRight {
-    margin-top:20px;
-    width:240px;
-    float:right;
-    padding:10px;
-}
-    #columnRight dl{
-        padding-left:10px;
-        border-left:1px solid #e6e6e6;
-    }
-    #columnRight dl dd{
-        color:#666666;
-    }
-    #columnRight dl dt a{
-        display: block;
-        width: 192px;
-        font-size:18px;
-        text-decoration: none;
-        color:#666666;
-        padding-top:5px;
-        padding-bottom:5px;
-    }
-    #columnRight dl dt a:hover{
-        color: #00ccff;
-        background-color: #ffffff;
-    }
