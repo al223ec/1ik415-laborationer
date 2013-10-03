@@ -1,0 +1,90 @@
+    
+/* width för menyn */
+    nav ul li a{
+        width:480px;
+    }
+    /* Class elemnt navigation 
+*******************************************************************************/
+    nav .start{
+        background: #00ccff url('pics/sprite.png') 10px -38px no-repeat; 
+    }
+    nav .start a:hover{
+        background: #0088ab url('pics/sprite.png') 10px 10px no-repeat; 
+    }
+        nav .start .active{
+        background: #ff546a url('pics/sprite.png') 10px 10px no-repeat;   
+        }
+    nav .laborationer{
+        background: #00ccff url('pics/sprite.png') 10px -134px no-repeat; 
+    }
+    nav .laborationer a:hover{
+        background: #0088ab url('pics/sprite.png') 10px -86px no-repeat; 
+    }
+        nav .laborationer .active{
+        background: #ff546a url('pics/sprite.png') 10px -86px no-repeat;  
+        }
+    nav .presentation{
+        background: #00ccff url('pics/sprite.png') 10px -230px no-repeat; 
+    }
+    nav .presentation a:hover{
+        background: #0088ab url('pics/sprite.png') 10px -182px no-repeat; 
+    }
+        nav .presentation .active{
+        background: #ff546a url('pics/sprite.png') 10px -182px no-repeat; 
+        }
+    nav .kontakt{
+        background: #00ccff url('pics/sprite.png') 10px -326px no-repeat; 
+    }
+    nav .kontakt a:hover{
+        background: #0088ab url('pics/sprite.png') 10px -278px no-repeat; 
+    }
+        nav .kontakt .active{
+        background: #ff546a url('pics/sprite.png') 10px -278px no-repeat;  
+        }
+        
+
+
+/*istället för bildogotypen 
+    #logo h1 {
+        color:#00ccff;
+        content:Anton Ledström; 
+        float:left;
+        font-size: 58px;
+        font-weight:100;
+        text-align:right;
+        padding-bottom:40px;
+    }
+/* Håller allt innehåll på sidan*/
+#mainPage{
+    margin:auto;
+    background-color: #ffffff
+}
+#mainContent {
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:10px;
+}
+#columnRight {
+    margin-top:20px;
+    padding:10px;
+}
+    #columnRight dl{
+        padding-left:10px;
+        border-left:1px solid #e6e6e6;
+    }
+    #columnRight dl dd{
+        color:#666666;
+    }
+    #columnRight dl dt a{
+        display: block;
+        width: 192px;
+        font-size:18px;
+        text-decoration: none;
+        color:#666666;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    #columnRight dl dt a:hover{
+        color: #00ccff;
+        background-color: #ffffff;
+    }

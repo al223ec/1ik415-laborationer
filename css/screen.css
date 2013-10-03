@@ -1,0 +1,79 @@
+/* Class elemnt navigation 
+*******************************************************************************/
+    nav .start{
+        background: #00ccff url('pics/sprite.png') 50px -38px no-repeat; 
+    }
+    nav .start a:hover{
+        background: #0088ab url('pics/sprite.png') 50px 10px no-repeat; 
+    }
+        nav .start .active{
+        background: #ff546a url('pics/sprite.png') 50px 10px no-repeat;   
+        }
+    nav .laborationer{
+        background: #00ccff url('pics/sprite.png') 20px -134px no-repeat; 
+    }
+    nav .laborationer a:hover{
+        background: #0088ab url('pics/sprite.png') 20px -86px no-repeat; 
+    }
+        nav .laborationer .active{
+        background: #ff546a url('pics/sprite.png') 20px -86px no-repeat;  
+        }
+    nav .presentation{
+        background: #00ccff url('pics/sprite.png') 20px -230px no-repeat; 
+    }
+    nav .presentation a:hover{
+        background: #0088ab url('pics/sprite.png') 20px -182px no-repeat; 
+    }
+        nav .presentation .active{
+        background: #ff546a url('pics/sprite.png') 20px -182px no-repeat; 
+        }
+    nav .kontakt{
+        background: #00ccff url('pics/sprite.png') 35px -326px no-repeat; 
+    }
+    nav .kontakt a:hover{
+        background: #0088ab url('pics/sprite.png') 35px -278px no-repeat; 
+    }
+        nav .kontakt .active{
+        background: #ff546a url('pics/sprite.png') 35px -278px no-repeat;  
+        }
+        
+/*Div element *************************************/
+#mainPage{
+    margin:auto;
+    width:940px;
+    overflow: hidden; /* utan denna fuckas designen upp med 2 div bredvid varandra */
+    background-color: #ffffff
+}
+#mainContent {
+    float: left;
+    margin-top:20px;
+    margin-bottom:20px;
+    max-width:600px;
+    padding:10px;
+}
+#columnRight {
+    margin-top:20px;
+    width:200px;
+    float:right;
+    padding:10px;
+}
+    #columnRight dl{
+        padding-left:10px;
+        border-left:1px solid #e6e6e6;
+    }
+    #columnRight dl dd{
+        color:#666666;
+    }
+    #columnRight dl dt a{
+        display: block;
+        width: 192px;
+        font-size:18px;
+        text-decoration: none;
+        color:#666666;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    #columnRight dl dt a:hover{
+        color: #00ccff;
+        background-color: #ffffff;
+    }

@@ -171,14 +171,13 @@ nav {
     nav ul{
         max-width:940px;
         margin:auto;
-
     }
     nav ul li{
         float: left;
     }
     nav ul li a{
         display: block;
-        width: 235px;
+        min-width:235px;
         text-align: center;
         font-size:20px;
         text-decoration: none;
@@ -186,46 +185,6 @@ nav {
         padding-top:10px;
         padding-bottom:10px;
     }
-/* Class elemnt navigation 
-*******************************************************************************/
-    nav .start{
-        background: #00ccff url('pics/sprite.png') 50px -38px no-repeat; 
-    }
-    nav .start a:hover{
-        background: #0088ab url('pics/sprite.png') 50px 10px no-repeat; 
-    }
-        nav .start .active{
-        background: #ff546a url('pics/sprite.png') 50px 10px no-repeat;   
-        }
-    nav .laborationer{
-        background: #00ccff url('pics/sprite.png') 20px -134px no-repeat; 
-    }
-    nav .laborationer a:hover{
-        background: #0088ab url('pics/sprite.png') 20px -86px no-repeat; 
-    }
-        nav .laborationer .active{
-        background: #ff546a url('pics/sprite.png') 20px -86px no-repeat;  
-        }
-    nav .presentation{
-        background: #00ccff url('pics/sprite.png') 20px -230px no-repeat; 
-    }
-    nav .presentation a:hover{
-        background: #0088ab url('pics/sprite.png') 20px -182px no-repeat; 
-    }
-        nav .presentation .active{
-        background: #ff546a url('pics/sprite.png') 20px -182px no-repeat; 
-        }
-    nav .kontakt{
-        background: #00ccff url('pics/sprite.png') 35px -326px no-repeat; 
-    }
-    nav .kontakt a:hover{
-        background: #0088ab url('pics/sprite.png') 35px -278px no-repeat; 
-    }
-        nav .kontakt .active{
-        background: #ff546a url('pics/sprite.png') 35px -278px no-repeat;  
-        }
-
-
 /* Footer håller footerText */
 footer {
     margin:auto;
@@ -237,5 +196,21 @@ footer {
 }
 #logo {
     margin: auto;
+    padding:0;
     max-width:940px;
+    background-color:#ffffff;
+}
+
+/* Class element
+********************************************************************************
+*/
+.left{
+    float:left;
+}
+.right{
+    float: right;
+}
+@media only screen and (min-width: 480px) {
+
+
 }
