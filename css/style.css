@@ -12,8 +12,7 @@ Problem med pixelratio på små skärmar i pixel grafik kan lösas med detta
 background-image: image-set(url(minbild.png) 1x,
             url(minbild2x.png)  2x,
             url(minbild3x.png)  3x);
-
-
+            
 <link rel="shortcut icon" href="bild.ico" type="image/x-icon" /> för IE
 <link rel="shortcut icon" href="bild.png" type="image/png" />
 
@@ -177,7 +176,6 @@ nav {
     }
     nav ul li a{
         display: block;
-        min-width:235px;
         text-align: center;
         font-size:20px;
         text-decoration: none;
@@ -190,13 +188,12 @@ footer {
     margin:auto;
     max-width:920px;
     padding:10px;
-    clear:both;
     color:#ffffff;
     background-color: #006985;
 }
 #logo {
     margin: auto;
-    padding:0;
+    padding-bottom:20px;
     max-width:940px;
     background-color:#ffffff;
 }

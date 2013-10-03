@@ -1,3 +1,6 @@
+nav ul li a{
+        width:235px; /* Denna måste sättas här annars fungerar inte max-width i förändrnigen i mobile.css */
+    }
 /* Class elemnt navigation 
 *******************************************************************************/
     nav .start{

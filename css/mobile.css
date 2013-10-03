@@ -1,7 +1,9 @@
-    
 /* width för menyn */
+    nav ul li{
+        float: none;
+    }
     nav ul li a{
-        width:480px;
+        max-width:480px;
     }
     /* Class elemnt navigation 
 *******************************************************************************/
@@ -41,8 +43,6 @@
         nav .kontakt .active{
         background: #ff546a url('pics/sprite.png') 10px -278px no-repeat;  
         }
-        
-
 
 /*istället för bildogotypen 
     #logo h1 {
@@ -56,8 +56,8 @@
     }
 /* Håller allt innehåll på sidan*/
 #mainPage{
-    margin:auto;
-    background-color: #ffffff
+    background-color: #ffffff;
+    /*clear:both;*/
 }
 #mainContent {
     margin-top:20px;
