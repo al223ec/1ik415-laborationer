@@ -1,7 +1,7 @@
-/* För att få menyn fast överst på sidan*/
+/* För att få menyn fast överst på sidan
 nav{
-    top:0px;
     background-color:#0088ab;
+    top:0px;
     position:fixed;
 }
 /*
@@ -18,11 +18,10 @@ nav a{
 nav:hover
 {
     height:128px;
-}*/
+}
 #logo {
     margin-top:120px;
-}
-/* slut */
+} */
     nav ul li{
         float: none;
     }
@@ -81,24 +80,10 @@ nav:hover
              background-position: 10px -283px; 
         }
 
-/*istället för bildogotypen 
-    #logo h1 {
-        color:#00ccff;
-        content:Anton Ledström; 
-        float:left;
-        font-size: 58px;
-        font-weight:100;
-        text-align:right;
-        padding-bottom:40px;
-    }
-/* Håller allt innehåll på sidan*/
 #mainPage{
     background-color: #ffffff;
-    /*clear:both;*/
 }
 #mainContent {
-    margin-top:20px;
-    margin-bottom:20px;
     padding:10px;
 }
 #columnRight {
