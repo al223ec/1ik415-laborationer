@@ -1,4 +1,12 @@
-/* width för menyn */
+/* För att få menyn fast överst på sidan*/
+nav{
+    top:0px;
+    position:fixed;
+}
+#logo {
+    margin-top:140px;
+}
+/* slut s*/
     nav ul li{
         float: none;
     }
@@ -7,41 +15,51 @@
     }
     /* Class elemnt navigation 
 *******************************************************************************/
-    nav .start{
-        background: #00ccff url('pics/sprite.png') 10px -38px no-repeat; 
+    nav .start a{
+        background-position:10px -38px;
     }
     nav .start a:hover{
-        background: #0088ab url('pics/sprite.png') 10px 10px no-repeat; 
+        background-position:10px 10px;
+        background-color: #0088ab; 
     }
         nav .start .active{
-        background: #ff546a url('pics/sprite.png') 10px 10px no-repeat;   
+            background-position:10px 10px;
+            background-color: #ff546a;   
         }
-    nav .laborationer{
-        background: #00ccff url('pics/sprite.png') 10px -134px no-repeat; 
+    nav .laborationer a{
+        background-position:10px -134px;
     }
     nav .laborationer a:hover{
-        background: #0088ab url('pics/sprite.png') 10px -86px no-repeat; 
+        background-color: #0088ab; 
+        background-position: 10px -86px;
     }
         nav .laborationer .active{
-        background: #ff546a url('pics/sprite.png') 10px -86px no-repeat;  
+            background-color: #ff546a;   
+            background-position: 10px -86px;  
         }
-    nav .presentation{
-        background: #00ccff url('pics/sprite.png') 10px -230px no-repeat; 
+    nav .presentation a{
+        background-color: #00ccff;
+        background-position: 10px -230px; 
     }
     nav .presentation a:hover{
-        background: #0088ab url('pics/sprite.png') 10px -182px no-repeat; 
+        background-color: #0088ab;
+        background-position: 10px -182px; 
     }
         nav .presentation .active{
-        background: #ff546a url('pics/sprite.png') 10px -182px no-repeat; 
+            background-color: #ff546a;
+            background-position: 10px -182px;
         }
-    nav .kontakt{
-        background: #00ccff url('pics/sprite.png') 10px -326px no-repeat; 
+    nav .kontakt a{
+        background-color: #00ccff;
+        background-position: 10px -326px;
     }
     nav .kontakt a:hover{
-        background: #0088ab url('pics/sprite.png') 10px -278px no-repeat; 
+        background-color: #0088ab;
+        background-position: 10px -278px ;
     }
         nav .kontakt .active{
-        background: #ff546a url('pics/sprite.png') 10px -278px no-repeat;  
+             background-color: #ff546a;
+             background-position: 10px -278px; 
         }
 
 /*istället för bildogotypen 

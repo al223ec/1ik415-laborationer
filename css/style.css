@@ -180,6 +180,7 @@ nav {
         font-size:20px;
         text-decoration: none;
         color: #ffffff;
+        background: #00ccff url('pics/sprite.png') no-repeat; 
         padding-top:10px;
         padding-bottom:10px;
     }
