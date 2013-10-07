@@ -4,62 +4,65 @@ nav{
     position:fixed;
 }
 #logo {
-    margin-top:140px;
+    margin-top:120px;
 }
-/* slut s*/
+/* slut */
     nav ul li{
         float: none;
     }
     nav ul li a{
         max-width:480px;
+        padding-top:5px;
+        padding-bottom:5px;
     }
-    /* Class elemnt navigation 
+
+/* Class elemnt navigation 
 *******************************************************************************/
     nav .start a{
-        background-position:10px -38px;
+        background-position:10px -43px;
     }
     nav .start a:hover{
-        background-position:10px 10px;
+        background-position:10px 5px;
         background-color: #0088ab; 
     }
         nav .start .active{
-            background-position:10px 10px;
+            background-position:10px 5px;
             background-color: #ff546a;   
         }
     nav .laborationer a{
-        background-position:10px -134px;
+        background-position:10px -139px;
     }
     nav .laborationer a:hover{
         background-color: #0088ab; 
-        background-position: 10px -86px;
+        background-position: 10px -91px;
     }
         nav .laborationer .active{
             background-color: #ff546a;   
-            background-position: 10px -86px;  
+            background-position: 10px -91px;  
         }
     nav .presentation a{
         background-color: #00ccff;
-        background-position: 10px -230px; 
+        background-position: 10px -235px; 
     }
     nav .presentation a:hover{
         background-color: #0088ab;
-        background-position: 10px -182px; 
+        background-position: 10px -187px; 
     }
         nav .presentation .active{
             background-color: #ff546a;
-            background-position: 10px -182px;
+            background-position: 10px -187px;
         }
     nav .kontakt a{
         background-color: #00ccff;
-        background-position: 10px -326px;
+        background-position: 10px -331px;
     }
     nav .kontakt a:hover{
         background-color: #0088ab;
-        background-position: 10px -278px ;
+        background-position: 10px -283px ;
     }
         nav .kontakt .active{
              background-color: #ff546a;
-             background-position: 10px -278px; 
+             background-position: 10px -283px; 
         }
 
 /*istället för bildogotypen 
