@@ -16,7 +16,6 @@ background-image: image-set(url(minbild.png) 1x,
 <link rel="shortcut icon" href="bild.ico" type="image/x-icon" /> för IE
 <link rel="shortcut icon" href="bild.png" type="image/png" />
 
-
 *******************
     Reset css*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -116,6 +115,9 @@ form, fieldset, label, legend{
     margin: 0;
 	padding: 0;
 } 
+    input, select{
+        float:right;
+    }
     form p{
         padding:5px;
     }
@@ -158,9 +160,6 @@ header{
 The <nav> tag defines a set of navigation links.
 Not all links of a document must be in a <nav> element. The <nav> element is intended only for major block of navigation links.
 Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
-
-----------------end style ------------------------------------>
-
 */
 nav {
     width:100%;
@@ -199,14 +198,14 @@ footer {
 
 /* Class element
 ********************************************************************************
+@media only screen and (min-width: 480px) {
+
+
+}
 */
 .left{
     float:left;
 }
 .right{
     float: right;
-}
-@media only screen and (min-width: 480px) {
-
-
 }

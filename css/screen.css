@@ -57,20 +57,22 @@ nav ul li a{
     margin:auto;
     width:940px;
     overflow: hidden; /* utan denna fuckas designen upp med 2 div bredvid varandra */
-    background-color: #ffffff
+    /*background-color: #ffffff; */
 }
 #mainContent {
     float: left;
     margin-top:20px;
     margin-bottom:20px;
-    max-width:500px;
+    width:590px;
     padding:10px;
+    background-color: #ffffff;
 }
 #columnRight {
     margin-top:20px;
     width:300px;
     float:right;
     padding:10px;
+    background-color: #ffffff;
 }
     #columnRight dl{
         padding-left:10px;

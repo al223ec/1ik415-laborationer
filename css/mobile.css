@@ -2,22 +2,21 @@
 nav{
     top:0px;
     position:fixed;
-    
-}
+
 /*
+}
 För att få en rolldown efekt :hover
-vet inte riktigt hur jag ska lösa detta för touch
+vet inte riktigt hur jag ska lösa detta för touch */
     height:7px;
     overflow:hidden;
     transition:height 0.5s;
 }
-
 nav:hover
 {
     height:128px;
-}*/
+}
 #logo {
-    margin-top:120px;
+
 }
 /* slut */
     nav ul li{
