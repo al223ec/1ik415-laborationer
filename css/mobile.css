@@ -7,9 +7,9 @@ nav{
 }
 För att få en rolldown efekt :hover
 vet inte riktigt hur jag ska lösa detta för touch */
-    height:7px;
+    height:15px;
     overflow:hidden;
-    transition:height 0.5s;
+    transition:height 0.2s;
 }
 nav:hover
 {
