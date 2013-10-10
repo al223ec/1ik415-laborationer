@@ -170,6 +170,7 @@ footer {
     max-width:920px;
     padding:10px;
     color:#ffffff;
+    overflow:hidden;
     background-color: #006985;
 }
 
