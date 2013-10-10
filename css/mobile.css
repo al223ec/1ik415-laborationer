@@ -86,21 +86,21 @@ nav{
 #mainPage{
     background-color: #ffffff;
 }
-#mainContent {
+main {
     padding:10px;
 }
-#columnRight {
+aside {
     margin-top:20px;
     padding:10px;
 }
-    #columnRight dl{
+    aside dl{
         padding-left:10px;
         border-left:1px solid #e6e6e6;
     }
-    #columnRight dl dd{
+    aside dl dd{
         color:#666666;
     }
-    #columnRight dl dt a{
+    aside dl dt a{
         display: block;
         width: 192px;
         font-size:18px;
@@ -109,7 +109,7 @@ nav{
         padding-top:5px;
         padding-bottom:5px;
     }
-    #columnRight dl dt a:hover{
+    aside dl dt a:hover{
         color: #00ccff;
         background-color: #ffffff;
     }

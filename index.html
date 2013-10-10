@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="sv">
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width; initial-scale=1;" > <!--  maximum-scale=1">  för att ta bort funktionen att kunna zoma-->
-
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1;"> <!--  maximum-scale=1">  för att ta bort funktionen att kunna zoma-->
+        
+         <!--<link rel="stylesheet" type="text/css" href="css/styleSCSS.css"> -->
+         
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" media="screen and (min-width:481px)" href="css/screen.css" />
         <link rel="stylesheet" media="only screen and (max-width:480px)" href="css/mobile.css" />
         
@@ -14,7 +17,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="pics/icon.png"/>  
         <link rel="apple-touch-icon" sizes="114x114" href="pics/icon.png"/>  
 
-        <title>Startsida - Anton Ledström</title>
+        <title>Webbprogrammerare - Anton Ledström</title>
     </head>
     <body>
     <header>
@@ -31,131 +34,198 @@
         </ul>
      </nav>
     <div id="mainPage">
-    <div id="mainContent">
-            <h1 id="mobileFirst">L04 – Mobile First </h1>
-            <h2>Designa för mobil</h2>
-            <p>Denna laboration fokuserar helt och hållet på att göra justeringar av din sajt så att den kommer att fungera på mobila enheter.
-                Efter laborationen ska du: - Kunna anpassa befintliga sajter för mobila enheter.    
-            </p>
-            <p>
-                Du ska i denna uppgift stila om din laborationsportal så att den lämpar sig att användas på en enhet med "mindre" skärm, exempelvis en iPhone eller en Androidtelefon.
-                Går man in på sidan med en enhet som har en skärm som identifierar sig om smalare än 481 pixlar så ska man få en annan layout än vad som är fallet på en vanlig skärm. Tänk på att exempelvis iPhone och Androidtelefoner inte använder handheld-stilmallar utan identifierar sig som en skärm så du kommer att behöva jobba med CSS3 media queries för att kunna skapa en stilmall lämpad för smartphonen.
-                Liggande layout
-                Du ska skapa en anpassad stilmall för skärmar smalare än 481 pixlar.
-                Samtliga sidor på din laborationsportal ska ha den anpassade stilmallen.
-                Allt innehåll ska vara lika tillgängligt som tidigare. Det är designen som ska göras om. Dock kan du fundera på om visst innehåll ska tonas upp eller ner beroende på om man sitter på en mobil enheter eller inte.
-                Den ordinarie stilmallen ska fortfarande användas om man går in med en enhet bredare än 480px.
-                När användaren surfar in med en smartphone så ska man inte behöva zooma på sidan.
-                Användaren ska inte behöva scrolla i x-led (horisontellt).
-                Om användaren väljer att spara din sajt som en genväg från hemskärmen i iOS så ska du erbjuda en speciell ikon för detta.
-                Arbeta igenom formuläret så att det lämpar sig för mobila enheter.
-                Utöver ovanstående ska din sida förses med en så kallad "favicon".
-            </p>
-            <h1 id="copyCat">L03 – Copycat</h1>
-            <h2>"Forka"</h2>
-            <p>
-                Vi kommer på denna laboration fortsätta med CSS och nu finslipa vår sida. Du kommer även att få träna
-                lite extra på CSS genom att göra en ny layout på en separat sida och så långt det går försöka efterlikna
-                en redan färdig design. I och med detta kommer du också att få testa att "forka" ett befintligt projekt på GitHub.
-            </p>
-            <p>
-                Vi fortsätter med css. Efter laborationen ska du: - Kunna stila formulär - Ordna utskriftsvänliga versioner - 
-                Kunna använda css-sprites - Ha en orientering om nya CSS3-tekniker.
-            </p>
-            <p>
-                Resultatet från copycat delen finns <a href="https://c9.io/al223ec/uppgift_3_3/workspace/index.html">här</a>
-                Detta är den bild vi skulle utgå ifrån, <a href="https://c9.io/al223ec/uppgift_3_3/workspace/IE7_hela.png">bilden</a>
-            </p>
-            <p>
-            <h1 id="uppgiftCSS">L02 – En stiligare portal</h1>
-            <h2>CSS</h2>
-            <p>
-                Cascading Style Sheets (CSS, på svenska stilmall) är ett språk som beskriver presentationsstilen för 
-                ett strukturerat dokument som till exempel typsnitt, textstorlek och färg. Tekniken är ett sätt att 
-                anpassa dokumentet med hänsyn till datortyp, skärmupplösning, färgdjup och installerade typsnitt.
-                Namnet kommer från en författares möjlighet att definiera ett utseende som sedan kan återanvändas på 
-                flera dokument med olika innehåll. Tekniken introducerades av Håkon Wium Lie och Bert Bos 1994 i webbläsaren Argo.            
-                <img src="pics/logo.png" alt="vänsterställd bild" class="left"> 
-                Ett XML- eller HTML-baserat dokument har inte på förhand en given utformning utan består av strukturerad 
-                text utan stilinformation. Hur dokumentet skrivs ut på papper, på en webbsida, på displayen i en mobiltelefon 
-                eller en handdator, bestäms av en stilmall. CSS ingår inte som en del av XML-språket, men kan användas 
-                för att anpassa presentationer av webbsidor. I slutändan är det dock mottagarklienten som har stort 
-                inflytande över hur dokumentet presenteras.
-            </p>
-            <p>
-                CSS används av Wikipedia och av de flesta stora webbplatser. CSS-dokumentet inkluderas oftast med hjälp av ett link-element:
-                Denna rad specificerar sökvägen till filen med stilspecifikationerna (href="sökvägen/till/stilmallen.css") och 
-                hur webbläsaren ska tolka filen (rel="stylesheet" type="text/css").
-                    <img src="pics/logo.png" alt="vänsterställd bild" class="right"> 
-                Ett annat sätt att använda CSS i ett HTML eller XHTML-dokument är style-elementet, som kan användas på två sätt. Det första är att inkludera CSS-filen via en CSS-instruktion:
-                Alternativt går det att skriva in CSS-koden direkt i style-elementet. Detta är inte rekommenderat då det kan uppstå problem med äldre webbläsare då de tolkar CSS-koden som en del av HTML-koden och därför visar koden direkt på webbsidan. En annan anledning är också för att det blir krångligare att ändra koden i efterhand sedan. Det är därför rekommenderat att använda ett link-element för att koppla CSS-kod till webbsidor, dels för att spara bandbredd och dels att en HTML-tolk och XHTML-tolk hanterar style-element på olika sätt.
-                CSS-tekniken har ibland kritiserats för att komplicera arbetet för webbutvecklare då många webbläsares stöd för CSS-standarden varierar kraftigt, webbläsaren Internet Explorer version 6 och tidigare är ofta utsatta för dessa anklagelser. Vissa speciella designdelar anses vara onödigt komplicerade som till exempel horisontell och vertikal centrering av olika element.
-                Exempel på CSS-dokument
-            </p>
-            <blockquote>
-                Skrivet av Anton Ledström
-            </blockquote>
-
-            <h1 id="uppgiftVideo">Uppgift 1.7 - Video</h1>
-            <h2>Video-taggen</h2>
-              <video id="video1" width="420" controls>
-                <source src="videos/trailer_400p.ogg" type="video/ogg">
-                <source src="videos/trailer_480p.mov" >
-                Din webbläsare verkar inte stödja video <!--Detta visas endast om videon failar-->
-              </video>
-            <p>
-                I denna uppgift ska jag få testa på att länka in en video med hjälp av video-taggen. 
-                På sajten <a href="http://www.bigbuckbunny.org">Big Buck Bunny</a> finns denna video.
-            </p>
-            <blockquote>
-                Skrivet av Anton Ledström
-            </blockquote>
+        <main>
+            <!-- Placerat detta här för att få till googles indexering --> 
+            <div id="hcard-Anton-Mikael-Ledstrom" class="vcard">
+                <a class="url fn n" href="http://al223ec.github.io/1ik415-laborationer/index.html">  
+                    <span class="given-name">Anton</span>
+                    <span class="additional-name">Mikael</span>
+                    <span class="family-name">Ledström</span>
+                </a>
+                    <div class="org">Webbprogrammerare</div>
+                    <a class="email" href="mailto:antonledstrom@mail.com">antonledstrom@mail.com</a>
+                <div class="adr">
+                    <div class="street-address">Bremergatan 21</div>
+                    <span class="locality">Kalmar</span>
             
-            <h1 id="uppgiftBilder">Uppgift 1.6 - Bilder</h1>
-            <h2>Vektorgrafik</h2>
-            <p>
-                Denna bild är gjord i Adobe Illustrator
-            </p>
-            <img src="pics/vectorBild.svg" alt="En bild skapad med Adobe Illustrator" id="vektorBild"> 
-            <blockquote>
-                Skrivet av Anton Ledström
-            </blockquote>
-            
-            <h1 id="förstaInlägg">Ett första inlägg</h1>
-            <h2>Kursblogg</h2>
-            <h3>Hej världen</h3>
-            <p>
-                Här kommer jag att skriva om de laborationer jag genomför i kursen Webbteknisk Introduktion. 
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam in erat at adipiscing. 
-                Morbi vehicula eleifend nisl, non vehicula urna iaculis eu. In consequat lorem eget ligula euismod, 
-                et porta odio rhoncus. Vivamus cursus nisl arcu, vel suscipit massa lacinia sed. 
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-           
-                Nam imperdiet lectus lobortis luctus tempus. Morbi dapibus, massa id tincidunt luctus, 
-                magna dolor semper ante, et ornare massa arcu nec odio. Maecenas convallis consequat 
-                libero et scelerisque. 
-            </p>
-            <p>
-                Praesent gravida iaculis nibh, non semper ante interdum at. 
-                Quisque vestibulum augue ac blandit placerat. Morbi metus tellus, egestas eget massa sit amet, 
-                bibendum aliquam turpis. Aenean pretium lorem nulla, ut facilisis justo tempor eu. 
-                Praesent euismod placerat ipsum, id luctus lorem ultrices sed. 
-                Mauris tincidunt justo vel tincidunt consequat. In dapibus sit amet odio ut rhoncus.
-                Proin porta lorem in convallis ullamcorper. Duis non quam lobortis, euismod magna non, 
-                fringilla risus. Vestibulum sagittis, justo eu pharetra ornare, nisi quam consequat libero, 
-                sed iaculis mi felis eget augue. Nulla in massa ut turpis tempor tincidunt a id leo. 
-                Praesent augue leo, aliquam quis gravida a, dignissim et massa. Phasellus rutrum sodales mollis. 
-                Vivamus commodo arcu in lectus vestibulum rhoncus.
-            </p>
-            <blockquote>
-                Skrivet av Anton Ledström
-            </blockquote>
-    </div>
-        <div id="columnRight">
+                    <span class="postal-code">324 33</span>
+                    
+                    <span class="country-name">Sweden</span>
+                </div>
+                    <div class="tel">070 888 888 88</div>
+            </div>
+            <article>
+                <h1 id="html5">HTML5/CSS3</h1>
+                <h2>Html 5 och css 3</h2>
+                <p>
+                    I denna avslutande laboration ska du testa att märka upp en sida med de nya strukturtaggarna i HTML5. Mikroformat står dessutom på agendan tillsammans med ytterligare CSS3.
+                </p>
+                <p>
+                    Jag skapade <a href="http://microformats.org/wiki/hcard">Hcard</a>i footern med hjälp av <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-10-10
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="mobileFirst">L04 – Mobile First </h1>
+                    <h2>Designa för mobil</h2>
+                </hgroup>
+                <p>Denna laboration fokuserar helt och hållet på att göra justeringar av din sajt så att den kommer att fungera på mobila enheter.
+                    Efter laborationen ska du: - Kunna anpassa befintliga sajter för mobila enheter.    
+                </p>
+                <p>
+                    Du ska i denna uppgift stila om din laborationsportal så att den lämpar sig att användas på en enhet med "mindre" skärm, exempelvis en iPhone eller en Androidtelefon.
+                    Går man in på sidan med en enhet som har en skärm som identifierar sig om smalare än 481 pixlar så ska man få en annan layout än vad som är fallet på en vanlig skärm. Tänk på att exempelvis iPhone och Androidtelefoner inte använder handheld-stilmallar utan identifierar sig som en skärm så du kommer att behöva jobba med CSS3 media queries för att kunna skapa en stilmall lämpad för smartphonen.
+                    Liggande layout
+                    Du ska skapa en anpassad stilmall för skärmar smalare än 481 pixlar.
+                    Samtliga sidor på din laborationsportal ska ha den anpassade stilmallen.
+                    Allt innehåll ska vara lika tillgängligt som tidigare. Det är designen som ska göras om. Dock kan du fundera på om visst innehåll ska tonas upp eller ner beroende på om man sitter på en mobil enheter eller inte.
+                    Den ordinarie stilmallen ska fortfarande användas om man går in med en enhet bredare än 480px.
+                    När användaren surfar in med en smartphone så ska man inte behöva zooma på sidan.
+                    Användaren ska inte behöva scrolla i x-led (horisontellt).
+                    Om användaren väljer att spara din sajt som en genväg från hemskärmen i iOS så ska du erbjuda en speciell ikon för detta.
+                    Arbeta igenom formuläret så att det lämpar sig för mobila enheter.
+                    Utöver ovanstående ska din sida förses med en så kallad "favicon".
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-10-07
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="copyCat">L03 – Copycat</h1>
+                    <h2>"Forka"</h2>
+                </hgroup>
+                <p>
+                    Vi kommer på denna laboration fortsätta med CSS och nu finslipa vår sida. Du kommer även att få träna
+                    lite extra på CSS genom att göra en ny layout på en separat sida och så långt det går försöka efterlikna
+                    en redan färdig design. I och med detta kommer du också att få testa att "forka" ett befintligt projekt på GitHub.
+                </p>
+                <p>
+                    Vi fortsätter med css. Efter laborationen ska du: - Kunna stila formulär - Ordna utskriftsvänliga versioner - 
+                    Kunna använda css-sprites - Ha en orientering om nya CSS3-tekniker.
+                </p>
+                <p>
+                    Resultatet från copycat delen finns <a href="https://c9.io/al223ec/uppgift_3_3/workspace/index.html">här</a>
+                    Detta är den bild vi skulle utgå ifrån, <a href="https://c9.io/al223ec/uppgift_3_3/workspace/IE7_hela.png">bilden</a>
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-09-30
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="uppgiftCSS">L02 – En stiligare portal</h1>
+                    <h2>CSS</h2>
+                </hgroup>
+                <p>
+                    Cascading Style Sheets (CSS, på svenska stilmall) är ett språk som beskriver presentationsstilen för 
+                    ett strukturerat dokument som till exempel typsnitt, textstorlek och färg. Tekniken är ett sätt att 
+                    anpassa dokumentet med hänsyn till datortyp, skärmupplösning, färgdjup och installerade typsnitt.
+                    Namnet kommer från en författares möjlighet att definiera ett utseende som sedan kan återanvändas på 
+                    flera dokument med olika innehåll. Tekniken introducerades av Håkon Wium Lie och Bert Bos 1994 i webbläsaren Argo.            
+                    <img src="pics/logo.png" alt="vänsterställd bild" class="left"> 
+                    Ett XML- eller HTML-baserat dokument har inte på förhand en given utformning utan består av strukturerad 
+                    text utan stilinformation. Hur dokumentet skrivs ut på papper, på en webbsida, på displayen i en mobiltelefon 
+                    eller en handdator, bestäms av en stilmall. CSS ingår inte som en del av XML-språket, men kan användas 
+                    för att anpassa presentationer av webbsidor. I slutändan är det dock mottagarklienten som har stort 
+                    inflytande över hur dokumentet presenteras.
+                </p>
+                <p>
+                    CSS används av Wikipedia och av de flesta stora webbplatser. CSS-dokumentet inkluderas oftast med hjälp av ett link-element:
+                    Denna rad specificerar sökvägen till filen med stilspecifikationerna (href="sökvägen/till/stilmallen.css") och 
+                    hur webbläsaren ska tolka filen (rel="stylesheet" type="text/css").
+                        <img src="pics/logo.png" alt="vänsterställd bild" class="right"> 
+                    Ett annat sätt att använda CSS i ett HTML eller XHTML-dokument är style-elementet, som kan användas på två sätt. Det första är att inkludera CSS-filen via en CSS-instruktion:
+                    Alternativt går det att skriva in CSS-koden direkt i style-elementet. Detta är inte rekommenderat då det kan uppstå problem med äldre webbläsare då de tolkar CSS-koden som en del av HTML-koden och därför visar koden direkt på webbsidan. En annan anledning är också för att det blir krångligare att ändra koden i efterhand sedan. Det är därför rekommenderat att använda ett link-element för att koppla CSS-kod till webbsidor, dels för att spara bandbredd och dels att en HTML-tolk och XHTML-tolk hanterar style-element på olika sätt.
+                    CSS-tekniken har ibland kritiserats för att komplicera arbetet för webbutvecklare då många webbläsares stöd för CSS-standarden varierar kraftigt, webbläsaren Internet Explorer version 6 och tidigare är ofta utsatta för dessa anklagelser. Vissa speciella designdelar anses vara onödigt komplicerade som till exempel horisontell och vertikal centrering av olika element.
+                    Exempel på CSS-dokument
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-09-23
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="uppgiftVideo">Uppgift 1.7 - Video</h1>
+                    <h2>Video-taggen</h2>
+                </hgroup>
+                  <video id="video1" width="420" controls>
+                    <source src="videos/trailer_400p.ogg" type="video/ogg">
+                    <source src="videos/trailer_480p.mov" >
+                    Din webbläsare verkar inte stödja video <!--Detta visas endast om videon failar-->
+                  </video>
+                <p>
+                    I denna uppgift ska jag få testa på att länka in en video med hjälp av video-taggen. 
+                    På sajten <a href="http://www.bigbuckbunny.org">Big Buck Bunny</a> finns denna video.
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-09-20
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="uppgiftBilder">Uppgift 1.6 - Bilder</h1>
+                    <h2>Vektorgrafik</h2>
+                </hgroup
+                <p>
+                    Denna bild är gjord i Adobe Illustrator
+                </p>
+                <img src="pics/vectorBild.svg" alt="En bild skapad med Adobe Illustrator" id="vektorBild"> 
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-09-19
+                </footer>
+            </article>
+            <article>
+                <hgroup>
+                    <h1 id="förstaInlägg">Ett första inlägg</h1>
+                    <h2>Kursblogg</h2>
+                    <h3>Hej världen</h3>
+                </hgroup>
+                <p>
+                    Här kommer jag att skriva om de laborationer jag genomför i kursen Webbteknisk Introduktion. 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam in erat at adipiscing. 
+                    Morbi vehicula eleifend nisl, non vehicula urna iaculis eu. In consequat lorem eget ligula euismod, 
+                    et porta odio rhoncus. Vivamus cursus nisl arcu, vel suscipit massa lacinia sed. 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+               
+                    Nam imperdiet lectus lobortis luctus tempus. Morbi dapibus, massa id tincidunt luctus, 
+                    magna dolor semper ante, et ornare massa arcu nec odio. Maecenas convallis consequat 
+                    libero et scelerisque. 
+                </p>
+                <p>
+                    Praesent gravida iaculis nibh, non semper ante interdum at. 
+                    Quisque vestibulum augue ac blandit placerat. Morbi metus tellus, egestas eget massa sit amet, 
+                    bibendum aliquam turpis. Aenean pretium lorem nulla, ut facilisis justo tempor eu. 
+                    Praesent euismod placerat ipsum, id luctus lorem ultrices sed. 
+                    Mauris tincidunt justo vel tincidunt consequat. In dapibus sit amet odio ut rhoncus.
+                    Proin porta lorem in convallis ullamcorper. Duis non quam lobortis, euismod magna non, 
+                    fringilla risus. Vestibulum sagittis, justo eu pharetra ornare, nisi quam consequat libero, 
+                    sed iaculis mi felis eget augue. Nulla in massa ut turpis tempor tincidunt a id leo. 
+                    Praesent augue leo, aliquam quis gravida a, dignissim et massa. Phasellus rutrum sodales mollis. 
+                    Vivamus commodo arcu in lectus vestibulum rhoncus.
+                </p>
+                <footer>
+                    Skrivet av Anton Ledström
+                    - 2013-09-18
+                </footer>
+            </article>
+        </main>
+        <aside>
             <h2>Inlägg</h2>
                 <dl>
+                    <dt><a href="index.html#html5">L05 – Html 5/CSS 3</a></dt>
+                    <dd>- 2013-10-10</dd>
                     <dt><a href="index.html#mobileFirst">L04 – Mobile First</a></dt>
                     <dd>- 2013-10-07</dd>
                     <dt><a href="index.html#copyCat">L03 – Copycat "forka"</a></dt>
@@ -169,12 +239,27 @@
                     <dt><a href="index.html#förstaInlägg">Ett första inlägg</a></dt>
                     <dd>- 2013-09-18</dd>
                 </dl>
-            </div>
+        </aside>
     </div>
     <footer>
-        <p>
-            Footter text, kommer nog att placeras i lister. Lite mer text 
-        </p>
+        <div id="hcard-Anton-Mikael-Ledstrom" class="vcard">
+            <a class="url fn n" href="http://al223ec.github.io/1ik415-laborationer/index.html">  
+                <span class="given-name">Anton</span>
+                <span class="additional-name">Mikael</span>
+                <span class="family-name">Ledström</span>
+            </a>
+                <div class="org">Webbprogrammerare</div>
+                <a class="email" href="mailto:antonledstrom@mail.com">antonledstrom@mail.com</a>
+            <div class="adr">
+                <div class="street-address">Bremergatan 21</div>
+                <span class="locality">Kalmar</span>
+            
+                <span class="postal-code">324 33</span>
+            
+                <span class="country-name">Sweden</span>
+            </div>
+                <div class="tel">070 888 888 88</div>
+        </div>
     </footer>
     </body>
 </html>

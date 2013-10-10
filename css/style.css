@@ -1,23 +1,4 @@
-/* 
-
-<meta name="viewport" content="width:device-width, initial-scale=1.0" />
-
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" media="screen and (min-width:481px)" href="screen.css" />
-<link rel="stylesheet" media="only screen and (max-width:480px)" href="mobile.css" />
-
-Problem med pixelratio på små skärmar i pixel grafik kan lösas med detta
-<img src ="minbild.jpg" srcset="minbild2x.jpg 2x, minbild3x.jpg 3x" />
-
-background-image: image-set(url(minbild.png) 1x,
-            url(minbild2x.png)  2x,
-            url(minbild3x.png)  3x);
-            
-<link rel="shortcut icon" href="bild.ico" type="image/x-icon" /> för IE
-<link rel="shortcut icon" href="bild.png" type="image/png" />
-
-*******************
-    Reset css*/
+/* Reset css*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -44,7 +25,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section, main {
 	display: block;
 }
 ol, ul {
@@ -103,9 +84,6 @@ a {
     text-decoration:none;
     color:#ff546a;
 }
-blockquote{
-    padding:10px;
-}
 table th, td{
     padding:5px;
    	border: 1px solid #d8d8d8;
@@ -127,6 +105,7 @@ form, fieldset, label, legend{
     input[type="submit"]{
         margin-top:10px;
     }
+/* Utskrifts formatering */
 @media print{
     nav, footer, header img{
         display:none;
@@ -181,6 +160,10 @@ nav {
         color: #ffffff;
         background: #00ccff url('pics/sprite.png') no-repeat; 
     }
+article footer{
+    color:#ffffff;
+    background-color: #00ccff;
+}
 /* Footer håller footerText */
 footer {
     margin:auto;
@@ -189,6 +172,7 @@ footer {
     color:#ffffff;
     background-color: #006985;
 }
+
 #logo {
     margin: auto;
     padding-bottom:20px;
@@ -198,14 +182,13 @@ footer {
 
 /* Class element
 ********************************************************************************
-@media only screen and (min-width: 480px) {
-
-
-}
 */
 .left{
     float:left;
 }
 .right{
     float: right;
+}
+main .vcard {
+    display:none;
 }
