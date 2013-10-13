@@ -25,12 +25,12 @@ main {
 }
 
 aside{
-    margin-top:20%;
+    margin-top:200px;
     float:right;
     border-left:1px solid white;
     color:white;
-    padding:2%;
-    width:15%;
+    padding:5px;
+    max-width:15%;
 }
 
 img{
@@ -38,7 +38,7 @@ img{
 }
 #images{
     float:left;
-    width:68%;
+    max-width:68%;
     margin:5%;
 }
     #images a {
