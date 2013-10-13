@@ -1,0 +1,5 @@
+{"ts":1381664634942,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1381664675410,"patch":[[{"diffs":[[1,"main {\n    margin:auto; \n    max-width:1680px;\n}"]],"start1":0,"start2":0,"length1":0,"length2":48}]],"length":48,"saved":false}
+{"ts":1381664716075,"patch":[[{"diffs":[[0,"680px;\n}"],[1,"\naside{\n    float:right;\n    width:400px;\n}\n#images{\n    max-width:1280px;\n}"]],"start1":40,"start2":40,"length1":8,"length2":84}]],"length":124,"saved":false}
+{"ts":1381664772756,"patch":[[{"diffs":[[0,"images{\n"],[1,"    float:left;\n"],[0,"    max-"]],"start1":93,"start2":93,"length1":16,"length2":32}]],"length":140,"saved":false}
+{"ts":1381664779181,"patch":[[{"diffs":[[0,"width:12"],[-1,"8"],[1,"0"],[0,"0px;\n}"]],"start1":125,"start2":125,"length1":15,"length2":15}]],"length":140,"saved":false}

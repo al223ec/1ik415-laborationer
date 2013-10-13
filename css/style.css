@@ -52,8 +52,8 @@ html{
 }
 
 body {
-    font: 13px/23px Georgia, "Times New Roman", Times, serif;
-	/*font: 12px/22px Helvetica, Arial, sans-serif;*/
+    /*font: 13px/23px Georgia, "Times New Roman", Times, serif;*/
+	font: 12px/22px Helvetica, Arial, sans-serif;
 	margin:auto;
 }
 img, video {
