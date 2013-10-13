@@ -1,5 +1,23 @@
+/* Ladda ett externt typsnitt 
+http://www.fontsquirrel.com/fonts/Tiza
+http://designlovr.com/30-beautiful-and-free-fonts-you-can-use-with-font-face/
+*/
+@font-face {
+    font-family: 'tizaregular';
+    src: url('font/tiza-webfont.eot');
+    src: url('font/tiza-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/tiza-webfont.woff') format('woff'),
+         url('font/tiza-webfont.ttf') format('truetype'),
+         url('font/tiza-webfont.svg#tizaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color:#333333;
+    font-family: 'tizaregular';
+    font-size:16px;
+    color:black;
 }
 main {
     margin:auto; 
@@ -7,8 +25,12 @@ main {
 }
 
 aside{
+    margin-top:20%;
     float:right;
-    width:20%;
+    border-left:1px solid white;
+    color:white;
+    padding:2%;
+    width:15%;
 }
 
 img{
@@ -16,7 +38,7 @@ img{
 }
 #images{
     float:left;
-    width:70%;
+    width:68%;
     margin:5%;
 }
     #images a {
@@ -26,6 +48,8 @@ img{
         float:left;
         margin:0 12px 10px;
         padding: 10px 10px 25px;
+        text-decoration:none;
+        text-align:center;
         -webkit-transition: all .4s ;
 	    -moz-transition: all .4s ;
 	    transition: all .4s ;  
@@ -46,10 +70,22 @@ img{
 	    display: block; 
 	    width: inherit; 
     }
-    #images a {
+    
+    #images a:nth-child(1n) {
+        -webkit-transform: rotate(-4deg);  
+    	-moz-transform: rotate(-4deg); 
+    	transform: rotate(-4deg); 
+    }
+    #images a:nth-child(2n) {
         -webkit-transform: rotate(4deg);  
     	-moz-transform: rotate(4deg); 
     	transform: rotate(4deg); 
+    }
+    
+    #images a:nth-child(3n) {
+        -webkit-transform: rotate(-10deg);  
+    	-moz-transform: rotate(-10deg); 
+    	transform: rotate(-10deg); 
     }
 
     #images a:hover{
